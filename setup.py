@@ -12,10 +12,10 @@ long_description = (here / 'README.md').read_text(encoding='utf-8')
 
 setup(
     
-    name='metrics_regression',  # Required
+    name='metricsregression',  # Required
 
     
-    version='1.0.0',  # Required
+    version='0.0.1',  # Required
 
     
     description='Metrics for regression',  # Optional
@@ -34,6 +34,8 @@ setup(
        
         'Intended Audience :: Developers',
         'Topic :: Software Development :: Build Tools',
+        
+        'License :: OSI Approved :: MIT License',
         
         "Operating System :: Unix",
         "Operating System :: MacOS :: MacOS X",

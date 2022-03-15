@@ -61,7 +61,7 @@ setup(
     python_requires='>=3.6, <4',
 
 
-    install_requires=['sklearn','math'],  # Optional
+    #install_requires=['sklearn','math'],  # Optional
    
     project_urls={  # Optional
         'Source': 'https://github.com/babusarath05/metrics_regression'

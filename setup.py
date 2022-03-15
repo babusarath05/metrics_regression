@@ -34,8 +34,6 @@ setup(
        
         'Intended Audience :: Developers',
         'Topic :: Software Development :: Build Tools',
-
-        'License ::  MIT License',
         
         "Operating System :: Unix",
         "Operating System :: MacOS :: MacOS X",

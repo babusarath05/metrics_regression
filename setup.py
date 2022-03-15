@@ -1,71 +1,34 @@
-# Always prefer setuptools over distutils
 from setuptools import setup, find_packages
-import pathlib
+import codecs
+import os
 
-here = pathlib.Path(__file__).parent.resolve()
+here = os.path.abspath(os.path.dirname(__file__))
 
-# Get the long description from the README file
-long_description = (here / 'README.md').read_text(encoding='utf-8')
+with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
+    long_description = "\n" + fh.read()
 
-# Arguments marked as "Required" below must be included for upload to PyPI.
-# Fields marked as "Optional" may be commented out.
+VERSION = '0.0.2'
+DESCRIPTION = 'metrics for regression'
+LONG_DESCRIPTION = 'metrics for regression'
 
+# Setting up
 setup(
-    
-    name='metricsregr',  # Required
-
-    
-    version='0.0.1',  # Required
-
-    
-    description='Metrics for regression',  # Optional
-
-    
-    
-    author='sarath babu',  # Optional
-
-   
-    author_email='babusarath05@gmail.com',  # Optional
-
-   
-    classifiers=[ 
-        'Development Status :: 3 - Alpha',
-
-       
-        'Intended Audience :: Developers',
-        'Topic :: Software Development :: Build Tools',
-        
-        'License :: OSI Approved :: MIT License',
-        
+    name="metricsregr",
+    version=VERSION,
+    author="sarath babu",
+    author_email="babusarath05@gmail.com",
+    description=DESCRIPTION,
+    long_description_content_type="text/markdown",
+    long_description=long_description,
+    packages=find_packages(),
+    #install_requires=['opencv-python', 'pyautogui', 'pyaudio'],
+    keywords=['python', 'regression','metrics','adj r2_score','r2_score','rmse'],
+    classifiers=[
+        "Development Status :: 1 - Planning",
+        "Intended Audience :: Developers",
+        "Programming Language :: Python :: 3",
         "Operating System :: Unix",
         "Operating System :: MacOS :: MacOS X",
         "Operating System :: Microsoft :: Windows",
-
-        
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.6',
-        'Programming Language :: Python :: 3.7',
-        'Programming Language :: Python :: 3.8',
-        'Programming Language :: Python :: 3.9',
-        "Programming Language :: Python :: 3.10",
-        'Programming Language :: Python :: 3 :: Only',
-    ],
-
-    
-    keywords='metrics, regression, Adjusted r2 score,rmse',  # Optional
-
-   
-    package_dir={'': 'src'},  # Optional
-
-   
-    packages=find_packages(where='src'),  # Required
-
-    python_requires='>=3.6, <4',
-
-
-    #install_requires=['sklearn','math'],  # Optional
-   
-    project_urls={  # Optional
-        'Source': 'https://github.com/babusarath05/metrics_regression'
-    },
+    ]
 )

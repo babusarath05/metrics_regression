@@ -12,7 +12,7 @@ long_description = (here / 'README.md').read_text(encoding='utf-8')
 
 setup(
     
-    name='metricsregression',  # Required
+    name='metricsregr',  # Required
 
     
     version='0.0.1',  # Required

@@ -1,7 +1,4 @@
-<div align='center'>
- <a href="https://www.linkedin.com/in/sarath-babu-35baa685/">Linkedin</a>
- </div>
-
+# Metrics Regression
 metric scores for both regression and classification
 
 1. Regression metrics

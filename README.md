@@ -1,4 +1,6 @@
-[![LinkedIn][linkedin-shield]][https://www.linkedin.com/in/sarath-babu-35baa685/]
+<div align='center'>
+ <a href="https://www.linkedin.com/in/sarath-babu-35baa685/">Linkedin</a>
+ </div>
 
 metric scores for both regression and classification
 

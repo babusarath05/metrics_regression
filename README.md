@@ -1,8 +1,10 @@
-# Metrics Regression
-metric scores for both regression and classification
+<h1> Metrics Regression</h2>
+<h2>metric scores for both regression and classification</h2>
 
-1. Regression metrics
+<p> Regression metrics</p>
 
- a. Calculates MSE,RMSE,R2,MAE,MAPE in %,MedianAE,MSLE,RMSLE and Max Error.
+ <ul>
+ <li>Calculates MSE,RMSE,R2,MAE,MAPE in %,MedianAE,MSLE,RMSLE and Max Error.</li>
 
- b. For Adjusted R2, Please input x as a Dataframe.
+ <li>For Adjusted R2, Please input x as a Dataframe.</li>
+ </ul>
